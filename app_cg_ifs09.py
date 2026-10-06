@@ -52,6 +52,11 @@ if "components" not in st.session_state:
         {"Categoria": "SUSPENSION", "Componente": "Mangueta+Buje+Rod. Trasero (each)", "Masa": 2.7, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Buje delantero (cada uno)", "Masa": 1.0, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Bearings (each)", "Masa": 0.375, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
+        # SUSPENSION: DAMPERS & SPRINGS (2 por eje, situados justo en la cota de cada eje)
+        {"Categoria": "SUSPENSION", "Componente": "Rear Dampers (each)", "Masa": 0.9, "Qty": 2, "X": 0.0, "Y": 250.0, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Rear Springs (each)", "Masa": 0.5, "Qty": 2, "X": 0.0, "Y": 250.0, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Front Dampers (each)", "Masa": 0.8, "Qty": 2, "X": 1624.0, "Y": 340.0, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Front Springs (each)", "Masa": 0.4, "Qty": 2, "X": 1624.0, "Y": 340.0, "Activo": True},
         # AERO KIT (REDISTRIBUIDO: TOTAL = 16.0 kg)
         {"Categoria": "AERO KIT", "Componente": "Front Aero Weight", "Masa": 4.5, "Qty": 1, "X": 1624.0, "Y": 210.0, "Activo": True},
         {"Categoria": "AERO KIT", "Componente": "Rear Aero Weight (PDF)", "Masa": 6.0, "Qty": 1, "X": 180.0, "Y": 715.0, "Activo": True},
