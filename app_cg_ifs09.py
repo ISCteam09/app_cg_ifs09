@@ -24,8 +24,10 @@ if "components" not in st.session_state:
         {"Categoria": "TRACTIVE SYSTEM", "Componente": "Inverter module", "Masa": 1.1, "Qty": 1, "X": 510.0, "Y": 250.0, "Activo": True},
         # BRAKES & STEERING
         {"Categoria": "BRAKES & STEERING", "Componente": "Pedals total", "Masa": 4, "Qty": 1, "X": 2054.5, "Y": 246, "Activo": True},
+        {"Categoria": "BRAKES & STEERING", "Componente": "Steering axle", "Masa": 2, "Qty": 1, "X": 1563, "Y": 340, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Steering rack", "Masa": 0.68, "Qty": 1, "X": 1563.0, "Y": 180.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic lines", "Masa": 2.0, "Qty": 1, "X": 812.0, "Y": 100.0, "Activo": True},
+        {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic pumps", "Masa": 1.5, "Qty": 1, "X": 2054.5, "Y": 150, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Front Brake calipers (each)", "Masa": 0.5, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Rear Brake calipers (each)", "Masa": 0.4, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         # WHEELS
