@@ -27,10 +27,8 @@ if "components" not in st.session_state:
         {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic lines", "Masa": 2.0, "Qty": 1, "X": 812.0, "Y": 100.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Front Brake calipers (each)", "Masa": 0.5, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         # WHEELS
-        {"Categoria": "WHEELS", "Componente": "Rear Rubbers weight (each)", "Masa": 5.67, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
-        {"Categoria": "WHEELS", "Componente": "Rear Wheel rim weight (each)", "Masa": 5.67, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
-        {"Categoria": "WHEELS", "Componente": "Front Rubbers weight (each)", "Masa": 5.67, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
-        {"Categoria": "WHEELS", "Componente": "Front Wheel rim weight (each)", "Masa": 5.67, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
+        {"Categoria": "WHEELS", "Componente": "Rear Rubbers weight (each) & Rear Wheel rim weight (each)", "Masa": 5.67, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
+        {"Categoria": "WHEELS", "Componente": "Front Rubbers weight (each) & Front Wheel rim weight (each)", "Masa": 5.67, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "WHEELS", "Componente": "Rear Rotor mass (each)", "Masa": 0.378, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "WHEELS", "Componente": "Front Rotor mass (each)", "Masa": 0.378, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         # SUSPENSION
