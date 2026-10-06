@@ -34,20 +34,20 @@ if "components" not in st.session_state:
         # SUSPENSION
         {"Categoria": "SUSPENSION", "Componente": "Rear Push", "Masa": 0.125, "Qty": 2, "X": 0.0, "Y": 250.0, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Trapecio trasero 1", "Masa": 0.3, "Qty": 2, "X": 0.0, "Y": 281.2, "Activo": True},
-	{"Categoria": "SUSPENSION", "Componente": "Trapecio trasero 2", "Masa": 0.3, "Qty": 2, "X": 0.0, "Y": 121.2, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Trapecio trasero 2", "Masa": 0.3, "Qty": 2, "X": 0.0, "Y": 121.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Push", "Masa": 0.06, "Qty": 2, "X": 1624.0, "Y": 250.0, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Trapecio delantero 1", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 281.2, "Activo": True},
-	{"Categoria": "SUSPENSION", "Componente": "Trapecio delantero 2", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 121.2, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Trapecio delantero 2", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 121.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Antiroll trasera", "Masa": 0.51, "Qty": 1, "X": -160.0, "Y": 341.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Antiroll delantera", "Masa": 0.17, "Qty": 1, "X": 1624.0, "Y": 530, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Steering knuckle (each)", "Masa": 0.63546, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Mangueta+Buje+Rod. Trasero (each)", "Masa": 2.7, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Buje delantero (cada uno)", "Masa": 1.0, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Bearings (each)", "Masa": 0.375, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
-        # AERO KIT
-        {"Categoria": "AERO KIT", "Componente": "Front Aero Weight", "Masa": 4.0, "Qty": 1, "X": 1624.0, "Y": 210.0, "Activo": True},
-        {"Categoria": "AERO KIT", "Componente": "Rear Aero Weight (PDF)", "Masa": 4.8, "Qty": 1, "X": 180.0, "Y": 715.0, "Activo": True},
-        {"Categoria": "AERO KIT", "Componente": "Side Wings", "Masa": 5.5, "Qty": 1, "X": 820.0, "Y": 170.0, "Activo": True},
+        # AERO KIT (REDISTRIBUIDO: TOTAL = 16.0 kg)
+        {"Categoria": "AERO KIT", "Componente": "Front Aero Weight", "Masa": 4.5, "Qty": 1, "X": 1624.0, "Y": 210.0, "Activo": True},
+        {"Categoria": "AERO KIT", "Componente": "Rear Aero Weight (PDF)", "Masa": 6.0, "Qty": 1, "X": 180.0, "Y": 715.0, "Activo": True},
+        {"Categoria": "AERO KIT", "Componente": "Side Wings (each)", "Masa": 2.75, "Qty": 2, "X": 820.0, "Y": 170.0, "Activo": True},
     ]
 
 # --- BARRA LATERAL: CONTROLES RÁPIDOS Y AÑADIR ELEMENTOS ---
@@ -131,7 +131,7 @@ for cat in cats:
         text=sub_df["Componente"],
         textposition="top center",
         marker=dict(size=np.clip(sub_df["Masa_Total"] * 0.8, 8, 30), opacity=0.7),
-        hovertemplate="<b>%{text}</b><br>Masa: %{marker.size} kg<br>X: %{x} mm<br>Y: %{y} mm"
+        hovertemplate="<b>%{text}</b><br>Masa Total: %{marker.size} kg<br>X: %{x} mm<br>Y: %{y} mm"
     ))
 
 # Dibujar Ruedas (Rear & Front)
