@@ -13,27 +13,21 @@ if "components" not in st.session_state:
     st.session_state.components = [
         # CHASSIS
         {"Categoria": "CHASSIS", "Componente": "Chassis weight", "Masa": 34.06765, "Qty": 1, "X": 1159.0, "Y": 404.2, "Activo": True},
-        {"Categoria": "CHASSIS", "Componente": "Asientos, arneses, cortafuegos", "Masa": 5.2, "Qty": 1, "X": 850.0, "Y": 300.0, "Activo": True},
-        {"Categoria": "CHASSIS", "Componente": "Atenuador de impactos + placa anti-intrusión", "Masa": 2.0, "Qty": 1, "X": 2300.0, "Y": 200.0, "Activo": True},
         # ELECTRONICS
         {"Categoria": "ELECTRONICS", "Componente": "LV Battery", "Masa": 5.0, "Qty": 1, "X": 510.0, "Y": 410.0, "Activo": True},
-        {"Categoria": "ELECTRONICS", "Componente": "ACU (Acumulador)", "Masa": 60.0, "Qty": 1, "X": 429.0, "Y": 219.0, "Activo": True},
+        {"Categoria": "ELECTRONICS", "Componente": "ACU (Acumulador)", "Masa": 60.0, "Qty": 1, "X": 429.0, "Y": 219, "Activo": True},
         {"Categoria": "ELECTRONICS", "Componente": "DV ECU", "Masa": 1.5, "Qty": 1, "X": 510.0, "Y": 410.0, "Activo": True},
         {"Categoria": "ELECTRONICS", "Componente": "Estimate wiring", "Masa": 2.0, "Qty": 1, "X": 812.0, "Y": 300.0, "Activo": True},
         # TRACTIVE SYSTEM
         {"Categoria": "TRACTIVE SYSTEM", "Componente": "Engine weight (each)", "Masa": 3.7, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "TRACTIVE SYSTEM", "Componente": "Planetary gears (each)", "Masa": 0.38, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "TRACTIVE SYSTEM", "Componente": "Inverter module", "Masa": 1.1, "Qty": 1, "X": 510.0, "Y": 250.0, "Activo": True},
-        {"Categoria": "TRACTIVE SYSTEM", "Componente": "Cárteres, Palieres y Trípodes", "Masa": 7.6, "Qty": 1, "X": 0.0, "Y": 203.2, "Activo": True},
         # BRAKES & STEERING
-        {"Categoria": "BRAKES & STEERING", "Componente": "Pedals total", "Masa": 4.0, "Qty": 1, "X": 2054.5, "Y": 246.0, "Activo": True},
-        {"Categoria": "BRAKES & STEERING", "Componente": "Steering axle", "Masa": 2.0, "Qty": 1, "X": 1563.0, "Y": 340.0, "Activo": True},
+        {"Categoria": "BRAKES & STEERING", "Componente": "Pedals total", "Masa": 4, "Qty": 1, "X": 2054.5, "Y": 246, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Steering rack", "Masa": 0.68, "Qty": 1, "X": 1563.0, "Y": 180.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic lines", "Masa": 2.0, "Qty": 1, "X": 812.0, "Y": 100.0, "Activo": True},
-        {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic pumps", "Masa": 1.5, "Qty": 1, "X": 2054.5, "Y": 150.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Front Brake calipers (each)", "Masa": 0.5, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Rear Brake calipers (each)", "Masa": 0.4, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
-        {"Categoria": "BRAKES & STEERING", "Componente": "EBS", "Masa": 2.5, "Qty": 1, "X": 1150.0, "Y": 360.0, "Activo": True},
         # WHEELS
         {"Categoria": "WHEELS", "Componente": "Rear Rubbers weight (each) & Rear Wheel rim weight (each)", "Masa": 5.67, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "WHEELS", "Componente": "Front Rubbers weight (each) & Front Wheel rim weight (each)", "Masa": 5.67, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
@@ -47,24 +41,15 @@ if "components" not in st.session_state:
         {"Categoria": "SUSPENSION", "Componente": "Trapecio delantero 1", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 281.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Trapecio delantero 2", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 121.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Antiroll trasera", "Masa": 0.51, "Qty": 1, "X": -160.0, "Y": 341.2, "Activo": True},
-        {"Categoria": "SUSPENSION", "Componente": "Antiroll delantera", "Masa": 0.17, "Qty": 1, "X": 1624.0, "Y": 530.0, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Antiroll delantera", "Masa": 0.17, "Qty": 1, "X": 1624.0, "Y": 530, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Steering knuckle (each)", "Masa": 0.63546, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Mangueta+Buje+Rod. Trasero (each)", "Masa": 2.7, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Buje delantero (cada uno)", "Masa": 1.0, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Bearings (each)", "Masa": 0.375, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
-        # SUSPENSION: DAMPERS & SPRINGS (2 por eje, situados justo en la cota de cada eje)
-        {"Categoria": "SUSPENSION", "Componente": "Rear Dampers (each)", "Masa": 0.9, "Qty": 2, "X": 0.0, "Y": 250.0, "Activo": True},
-        {"Categoria": "SUSPENSION", "Componente": "Rear Springs (each)", "Masa": 0.5, "Qty": 2, "X": 0.0, "Y": 250.0, "Activo": True},
-        {"Categoria": "SUSPENSION", "Componente": "Front Dampers (each)", "Masa": 0.8, "Qty": 2, "X": 1624.0, "Y": 340.0, "Activo": True},
-        {"Categoria": "SUSPENSION", "Componente": "Front Springs (each)", "Masa": 0.4, "Qty": 2, "X": 1624.0, "Y": 340.0, "Activo": True},
         # AERO KIT (REDISTRIBUIDO: TOTAL = 16.0 kg)
         {"Categoria": "AERO KIT", "Componente": "Front Aero Weight", "Masa": 4.5, "Qty": 1, "X": 1624.0, "Y": 210.0, "Activo": True},
         {"Categoria": "AERO KIT", "Componente": "Rear Aero Weight (PDF)", "Masa": 6.0, "Qty": 1, "X": 180.0, "Y": 715.0, "Activo": True},
         {"Categoria": "AERO KIT", "Componente": "Side Wings (each)", "Masa": 2.75, "Qty": 2, "X": 820.0, "Y": 170.0, "Activo": True},
-        # COOLING 
-        {"Categoria": "COOLING", "Componente": "Circuito completo", "Masa": 3.8, "Qty": 1, "X": 480.0, "Y": 230.0, "Activo": True},
-        # HARDWARE
-        {"Categoria": "HARDWARE", "Componente": "Tornillería general y casquillos", "Masa": 5.0, "Qty": 1, "X": 800.0, "Y": 250.0, "Activo": True}
     ]
 
 # --- BARRA LATERAL: CONTROLES RÁPIDOS Y AÑADIR ELEMENTOS ---
@@ -75,7 +60,7 @@ tire_radius = st.sidebar.number_input("Radio de Rueda [mm]", value=203.2, step=0
 st.sidebar.markdown("---")
 st.sidebar.subheader("➕ Añadir Elemento Extra")
 with st.sidebar.form("new_item_form"):
-    new_cat = st.selectbox("Categoría", ["EXTRA", "CHASSIS", "ELECTRONICS", "TRACTIVE SYSTEM", "BRAKES & STEERING", "WHEELS", "SUSPENSION", "AERO KIT", "COOLING", "HARDWARE", "DRIVER"])
+    new_cat = st.selectbox("Categoría", ["EXTRA", "CHASSIS", "ELECTRONICS", "TRACTIVE SYSTEM", "BRAKES & STEERING", "WHEELS", "SUSPENSION", "AERO KIT", "DRIVER"])
     new_name = st.text_input("Nombre Componente", "Piloto (Ejemplo)")
     new_mass = st.number_input("Masa Unitaria [kg]", value=68.0, step=0.5)
     new_qty = st.number_input("Cantidad", value=1, min_value=1)
