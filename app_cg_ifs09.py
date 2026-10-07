@@ -27,23 +27,23 @@ if "components" not in st.session_state:
         {"Categoria": "BRAKES & STEERING", "Componente": "Pedals total", "Masa": 4.0, "Qty": 1, "X": 2054.5, "Y": 246.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Steering axle", "Masa": 2.0, "Qty": 1, "X": 1563.0, "Y": 340.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Steering rack", "Masa": 0.68, "Qty": 1, "X": 1563.0, "Y": 180.0, "Activo": True},
-        {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic lines", "Masa": 1.0, "Qty": 1, "X": 812.0, "Y": 100.0, "Activo": True},
-        {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic pumps", "Masa": 1.5, "Qty": 1, "X": 2054.5, "Y": 150.0, "Activo": True},
+        {"Categoria": "BRAKES & STEERING", "Componente": "Brake Hidraulic lines", "Masa": 1.0, "Qty": 1, "X": 812.0, "Y": 100.0, "Activo": True},
+        {"Categoria": "BRAKES & STEERING", "Componente": "Brake Hidraulic pumps", "Masa": 1.5, "Qty": 1, "X": 2054.5, "Y": 150.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Front Brake calipers (each)", "Masa": 0.5, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Rear Brake calipers (each)", "Masa": 0.4, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Volante", "Masa": 1.0, "Qty": 1, "X": 1150.0, "Y": 360.0, "Activo": True},
         # WHEELS
-        {"Categoria": "WHEELS", "Componente": "Rear Rubbers weight (each) & Rear Wheel rim weight (each)", "Masa": 5.67, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
-        {"Categoria": "WHEELS", "Componente": "Front Rubbers weight (each) & Front Wheel rim weight (each)", "Masa": 5.67, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
+        {"Categoria": "WHEELS", "Componente": "Rear Rubbers & Wheel rims (each)", "Masa": 5.67, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
+        {"Categoria": "WHEELS", "Componente": "Front Rubbers & Wheel rims (each)", "Masa": 5.67, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "WHEELS", "Componente": "Rear Rotor mass (each)", "Masa": 0.378, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "WHEELS", "Componente": "Front Rotor mass (each)", "Masa": 0.378, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         # SUSPENSION
         {"Categoria": "SUSPENSION", "Componente": "Rear Push", "Masa": 0.125, "Qty": 2, "X": 0.0, "Y": 250.0, "Activo": True},
-        {"Categoria": "SUSPENSION", "Componente": "Trapecio trasero 1", "Masa": 0.3, "Qty": 2, "X": 0.0, "Y": 281.2, "Activo": True},
-        {"Categoria": "SUSPENSION", "Componente": "Trapecio trasero 2", "Masa": 0.3, "Qty": 2, "X": 0.0, "Y": 121.2, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Trapecio trasero superior", "Masa": 0.3, "Qty": 2, "X": 0.0, "Y": 281.2, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Trapecio trasero inferior", "Masa": 0.3, "Qty": 2, "X": 0.0, "Y": 121.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Push", "Masa": 0.06, "Qty": 2, "X": 1624.0, "Y": 250.0, "Activo": True},
-        {"Categoria": "SUSPENSION", "Componente": "Trapecio delantero 1", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 281.2, "Activo": True},
-        {"Categoria": "SUSPENSION", "Componente": "Trapecio delantero 2", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 121.2, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Trapecio delantero superior", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 281.2, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Trapecio delantero inferior", "Masa": 0.185, "Qty": 2, "X": 1624.0, "Y": 121.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Antiroll trasera", "Masa": 0.51, "Qty": 1, "X": -160.0, "Y": 341.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Antiroll delantera", "Masa": 0.17, "Qty": 1, "X": 1624.0, "Y": 530.0, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Steering knuckle (each)", "Masa": 0.63546, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
@@ -51,24 +51,23 @@ if "components" not in st.session_state:
         {"Categoria": "SUSPENSION", "Componente": "Buje delantero (cada uno)", "Masa": 1.0, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Bearings (each)", "Masa": 0.375, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Rod Ends (total)", "Masa": 3.0, "Qty": 1, "X": 812.0, "Y": 203.2, "Activo": True},
-        # SUSPENSION: DAMPERS & SPRINGS
         {"Categoria": "SUSPENSION", "Componente": "Rear Springs & Rear Dampers (each)", "Masa": 1.0, "Qty": 2, "X": 0.0, "Y": 341.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Springs & Front Dampers (each)", "Masa": 1.0, "Qty": 2, "X": 1624.0, "Y": 530.0, "Activo": True},
-        # AERO KIT (REDISTRIBUIDO: TOTAL = 16.0 kg)
+        # AERO KIT
         {"Categoria": "AERO KIT", "Componente": "Front Aero Weight", "Masa": 4.5, "Qty": 1, "X": 1624.0, "Y": 210.0, "Activo": True},
         {"Categoria": "AERO KIT", "Componente": "Rear Aero Weight (PDF)", "Masa": 6.0, "Qty": 1, "X": 180.0, "Y": 715.0, "Activo": True},
         {"Categoria": "AERO KIT", "Componente": "Side Wings (each)", "Masa": 2.75, "Qty": 2, "X": 820.0, "Y": 170.0, "Activo": True},
         # COOLING 
-        {"Categoria": "COOLING", "Componente": "Hidraulic pump (Cooling)", "Masa": 1.5, "Qty": 1, "X": 0.0, "Y": 180.0, "Activo": True},
+        {"Categoria": "COOLING", "Componente": "Cooling Water pump", "Masa": 1.5, "Qty": 1, "X": 0.0, "Y": 180.0, "Activo": True},
         {"Categoria": "COOLING", "Componente": "Cooling liquid", "Masa": 1.5, "Qty": 1, "X": 730.0, "Y": 200.0, "Activo": True},
-        {"Categoria": "COOLING", "Componente": "Hidraulic lines (Cooling)", "Masa": 1.0, "Qty": 1, "X": 730.0, "Y": 200.0, "Activo": True},
+        {"Categoria": "COOLING", "Componente": "Cooling Fluid lines", "Masa": 1.0, "Qty": 1, "X": 730.0, "Y": 200.0, "Activo": True},
         {"Categoria": "COOLING", "Componente": "Cooling lateral fans + radiator", "Masa": 5.0, "Qty": 2, "X": 730.0, "Y": 190.0, "Activo": True},
         # OTHER
         {"Categoria": "OTHER", "Componente": "Tornillería general y casquillos", "Masa": 6.5, "Qty": 1, "X": 812.0, "Y": 250.0, "Activo": True},
         {"Categoria": "OTHER", "Componente": "Asientos, arneses, cortafuegos", "Masa": 5.2, "Qty": 1, "X": 1100.0, "Y": 320.0, "Activo": True},
     ]
 
-# --- BARRA LATERAL: CONTROLES RÁPIDOS Y AÑADIR ELEMENTOS ---
+# --- BARRA LATERAL ---
 st.sidebar.header("⚙️ Parámetros y Filtros")
 wheelbase = st.sidebar.number_input("Distancia entre Ejes (Wheelbase) [mm]", value=1624.0, step=1.0)
 tire_radius = st.sidebar.number_input("Radio de Rueda [mm]", value=203.2, step=0.1)
@@ -103,7 +102,8 @@ edited_df = st.data_editor(
         "Y": st.column_config.NumberColumn("Y (mm)", format="%.1f"),
         "Activo": st.column_config.CheckboxColumn("¿Incluir en CG?"),
     },
-    use_container_width=True
+    use_container_width=True,
+    key="components_data_editor"
 )
 
 df_active = edited_df[edited_df["Activo"]].copy()
@@ -174,4 +174,4 @@ fig.update_layout(
     template="plotly_white"
 )
 
-st.plotly_chart(fig, use_container_width=True, key="cg_main_plot")
+st.plotly_chart(fig, use_container_width=True, key="cg_plot_unique_id")
