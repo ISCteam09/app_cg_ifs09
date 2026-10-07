@@ -27,7 +27,7 @@ if "components" not in st.session_state:
         {"Categoria": "BRAKES & STEERING", "Componente": "Pedals total", "Masa": 4.0, "Qty": 1, "X": 2054.5, "Y": 246.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Steering axle", "Masa": 2.0, "Qty": 1, "X": 1563.0, "Y": 340.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Steering rack", "Masa": 0.68, "Qty": 1, "X": 1563.0, "Y": 180.0, "Activo": True},
-        {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic lines", "Masa": 2.0, "Qty": 1, "X": 812.0, "Y": 100.0, "Activo": True},
+        {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic lines", "Masa": 1.0, "Qty": 1, "X": 812.0, "Y": 100.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Hidraulic pumps", "Masa": 1.5, "Qty": 1, "X": 2054.5, "Y": 150.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Front Brake calipers (each)", "Masa": 0.5, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Rear Brake calipers (each)", "Masa": 0.4, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
@@ -50,6 +50,7 @@ if "components" not in st.session_state:
         {"Categoria": "SUSPENSION", "Componente": "Mangueta+Buje+Rod. Trasero (each)", "Masa": 2.7, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Buje delantero (cada uno)", "Masa": 1.0, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Bearings (each)", "Masa": 0.375, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
+        {"Categoria": "SUSPENSION", "Componente": "Rod Ends (total)", "Masa": 3.0, "Qty": 1, "X": 812.0, "Y": 203.2, "Activo": True},
         # SUSPENSION: DAMPERS & SPRINGS
         {"Categoria": "SUSPENSION", "Componente": "Rear Springs & Rear Dampers (each)", "Masa": 1.0, "Qty": 2, "X": 0.0, "Y": 341.2, "Activo": True},
         {"Categoria": "SUSPENSION", "Componente": "Front Springs & Front Dampers (each)", "Masa": 1.0, "Qty": 2, "X": 1624.0, "Y": 530.0, "Activo": True},
@@ -58,10 +59,13 @@ if "components" not in st.session_state:
         {"Categoria": "AERO KIT", "Componente": "Rear Aero Weight (PDF)", "Masa": 6.0, "Qty": 1, "X": 180.0, "Y": 715.0, "Activo": True},
         {"Categoria": "AERO KIT", "Componente": "Side Wings (each)", "Masa": 2.75, "Qty": 2, "X": 820.0, "Y": 170.0, "Activo": True},
         # COOLING 
-        {"Categoria": "COOLING", "Componente": "Circuito completo", "Masa": 3.8, "Qty": 1, "X": 480.0, "Y": 230.0, "Activo": True},
+        {"Categoria": "COOLING", "Componente": "Hidraulic pump", "Masa": 1.5, "Qty": 1, "X": 0.0, "Y": 180.0, "Activo": True},
+        {"Categoria": "COOLING", "Componente": "Cooling liquid", "Masa": 1.5, "Qty": 1, "X": 730.0, "Y": 200.0, "Activo": True},
+        {"Categoria": "COOLING", "Componente": "Hidraulic lines", "Masa": 1.0, "Qty": 1, "X": 730.0, "Y": 200.0, "Activo": True},
+        {"Categoria": "COOLING", "Componente": "Cooling lateral fans + radiator", "Masa": 5.0, "Qty": 2, "X": 730.0, "Y": 190.0, "Activo": True},
         # OTHER
-        {"Categoria": "OTHER", "Componente": "Tornillería general y casquillos", "Masa": 5.0, "Qty": 1, "X": 800.0, "Y": 250.0, "Activo": True},
-        {"Categoria": "OTHER", "Componente": "Asientos, arneses, cortafuegos", "Masa": 5.2, "Qty": 1, "X": 850.0, "Y": 300.0, "Activo": True},
+        {"Categoria": "OTHER", "Componente": "Tornillería general y casquillos", "Masa": 6.5, "Qty": 1, "X": 812.0, "Y": 250.0, "Activo": True},
+        {"Categoria": "OTHER", "Componente": "Asientos, arneses, cortafuegos", "Masa": 5.2, "Qty": 1, "X": 1100.0, "Y": 320.0, "Activo": True},
     ]
 
 # --- BARRA LATERAL: CONTROLES RÁPIDOS Y AÑADIR ELEMENTOS ---
@@ -175,6 +179,7 @@ fig.update_layout(
     height=600,
     template="plotly_white"
 )
+
 st.plotly_chart(fig, use_container_width=True)
 
 st.plotly_chart(fig, use_container_width=True)
