@@ -32,7 +32,7 @@ if "components" not in st.session_state:
         {"Categoria": "BRAKES & STEERING", "Componente": "Brake Hidraulic pumps", "Masa": 1.5, "Qty": 1, "X": 2054.5, "Y": 150.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Front Brake calipers (each)", "Masa": 0.761, "Qty": 2, "X": 1624.0, "Y": 203.2, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Rear Brake calipers (each)", "Masa": 0.375, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
-        {"Categoria": "BRAKES & STEERING", "Componente": "Volante", "Masa": 0,48, "Qty": 1, "X": 1150.0, "Y": 360.0, "Activo": True},
+        {"Categoria": "BRAKES & STEERING", "Componente": "Volante", "Masa": 0.48, "Qty": 1, "X": 1150.0, "Y": 360.0, "Activo": True},
         {"Categoria": "BRAKES & STEERING", "Componente": "Brake Fluid", "Masa": 2, "Qty": 1, "X": 1560.0, "Y": 360.0, "Activo": True},
         # WHEELS
         {"Categoria": "WHEELS", "Componente": "Rear Rubbers & Wheel rims (each)", "Masa": 5.67, "Qty": 2, "X": 0.0, "Y": 203.2, "Activo": True},
